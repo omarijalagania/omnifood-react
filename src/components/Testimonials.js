@@ -1,7 +1,9 @@
 import React from 'react';
 import Testimonialsblock from './Testimonialsblock';
 
-
+import authorImage1 from '../resources/img/customer-1.jpg';
+import authorImage2 from '../resources/img/customer-2.jpg';
+import authorImage3 from '../resources/img/customer-3.jpg';
 const Testimonials = () => {
     return(
         <React.Fragment>
@@ -12,28 +14,32 @@ const Testimonials = () => {
                 <div class="row">
                     <div class="col span-1-of-3">
                         <Testimonialsblock 
-                        customerImage=""
-                        author=""
-                        quoteText=""
+                        customerImage={authorImage1}
+                        author="Alberto Duncan"
+                        quoteText="Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking,
+                        so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!"
                         />
                     </div>
                     
                     <div class="col span-1-of-3">
-                        <blockquote>
-                            Inexpensive, healthy and great-tasting meals, 
-                            delivered right to my home. We have lots of food delivery here in Lisbon, 
-                            but no one comes even close to Omifood. Me and my family are so in love!
-                            <cite><img src="resources/img/customer-2.jpg" alt="Joana Silva"/>Joana Silva</cite>
-                        </blockquote>
+                        <Testimonialsblock 
+                        customerImage={authorImage2}
+                        author="Joana Silva"
+                        quoteText="Inexpensive, healthy and great-tasting meals, 
+                        delivered right to my home. We have lots of food delivery here in Lisbon, 
+                        but no one comes even close to Omifood. Me and my family are so in love!"
+                        />
                     </div>
                     
                     <div class="col span-1-of-3">
-                        <blockquote>
-                            I was looking for a quick and easy food delivery service in San Franciso. 
-                            I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. 
-                            Keep up the great work!
-                            <cite><img src="resources/img/customer-3.jpg" alt="Milton Chapman"/>Milton Chapman</cite>
-                        </blockquote>
+                    
+                        <Testimonialsblock 
+                        customerImage={authorImage3}
+                        author="Milton Chapman"
+                        quoteText="I was looking for a quick and easy food delivery service in San Franciso. 
+                        I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. 
+                        Keep up the great work!"
+                        />
                     </div>
                     
                 </div>
