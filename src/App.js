@@ -4,6 +4,7 @@ import Features from './components/Features';
 import Meals from './components/Meals';
 import Howitworks from './components/Howitworks';
 import Cities from './components/Cities';
+import Testimonials from './components/Testimonials';
 
 import './vendors/css/normalize.css';
 import './resources/css/Style.css';
@@ -19,6 +20,7 @@ function App() {
       <Meals />
       <Howitworks />
       <Cities />
+      <Testimonials />
     </div>
   );
 }
