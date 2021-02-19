@@ -5,6 +5,9 @@ import Meals from './components/Meals';
 import Howitworks from './components/Howitworks';
 import Cities from './components/Cities';
 import Testimonials from './components/Testimonials';
+import Plans from './components/Plans';
+import Form from './components/Form';
+import Footer from './components/Footer'
 
 import './vendors/css/normalize.css';
 import './resources/css/Style.css';
@@ -21,6 +24,9 @@ function App() {
       <Howitworks />
       <Cities />
       <Testimonials />
+      <Plans />
+      <Form />
+      <Footer />
     </div>
   );
 }
